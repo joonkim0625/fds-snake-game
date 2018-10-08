@@ -8,6 +8,7 @@ function SnakeGameLogic() {
   this.joints = [{ x: 5, y: 2 }, { x: 4, y: 2 }, { x: 3, y: 2 }];
 
   // 먹이의 좌표
+  // 게임이 새로 시작할 때마다 새로운 위치에 먹이를 생성
   this.fruit = {
     x: Math.floor(Math.random() * COLS),
     y: Math.floor(Math.random() * ROWS)
